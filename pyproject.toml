@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "flake8-pytest-importorskip"
+version = "0.0.0"
+description = "Make pycodestyle treat pytest.importorskip as an import statement (avoid E402)"
+authors = ["Ash Berlin-Taylor <ash@apache.org>"]
+license = "MIT"
+readme = 'README.md'
+repository = "https://github.com/ashb/flake8-pytest-iormportskip"
+homepage = "https://pypi.org/project/flake8-pytest-iormportskip"
+keywords = []
+
+[tool.poetry.plugins."flake8.extension"]
+PYTESTIMPORTSKIP = 'flake8_pytest_importorskip:patch_pytest_importorskip'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+flake8 = ">=3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "*",allow-prereleases = true}
+bumpversion = "*"
+flake8-awesome = "*"
+mypy = "*"
+pylint = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-deadfixtures = "*"
+pytest-mock = "*"
+pytest-flake8dir = "*"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
