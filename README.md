@@ -3,8 +3,8 @@
 [![pypi](https://badge.fury.io/py/flake8-pytest-importorskip.svg)](https://pypi.org/project/flake8-pytest-importorskip)
 [![Python: 3.6+](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://pypi.org/project/flake8-pytest-importorskip)
 [![Downloads](https://img.shields.io/pypi/dm/flake8-pytest-importorskip.svg)](https://pypistats.org/packages/flake8-pytest-importorskip)
-[![Build Status](https://travis-ci.org/ashb/flake8-pytest-importorskip.svg?branch=master)](https://travis-ci.org/ashb/flake8-pytest-importorskip)
-[![Code coverage](https://codecov.io/gh/ashb/flake8-pytest-importorskip/branch/master/graph/badge.svg)](https://codecov.io/gh/ashb/flake8-pytest-importorskip)
+![Build Status](https://img.shields.io/github/checks-status/ashb/flake8-pytest-importorskip/main)
+[![Code coverage](https://codecov.io/gh/ashb/flake8-pytest-importorskip/branch/main/graph/badge.svg)](https://codecov.io/gh/ashb/flake8-pytest-importorskip)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-green.svg)](https://en.wikipedia.org/wiki/Apache_License)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 
