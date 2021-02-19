@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flake8-pytest-importorskip"
-version = "1.0.0"
+version = "1.0.0.post0"
 description = "Make pycodestyle treat pytest.importorskip as an import statement (avoid E402)"
 authors = ["Ash Berlin-Taylor <ash@apache.org>"]
 license = "MIT"

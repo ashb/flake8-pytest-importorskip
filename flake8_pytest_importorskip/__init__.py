@@ -1,6 +1,6 @@
 from typing import Any, Dict
 
-__version__ = '1.0.0'
+__version__ = '1.0.0.post0'
 
 
 def patch_pytest_importorskip(
