@@ -5,8 +5,8 @@ description = "Make pycodestyle treat pytest.importorskip as an import statement
 authors = ["Ash Berlin-Taylor <ash@apache.org>"]
 license = "MIT"
 readme = 'README.md'
-repository = "https://github.com/ashb/flake8-pytest-iormportskip"
-homepage = "https://pypi.org/project/flake8-pytest-iormportskip"
+repository = "https://github.com/ashb/flake8-pytest-importorskip"
+homepage = "https://pypi.org/project/flake8-pytest-importorskip"
 keywords = []
 
 [tool.poetry.plugins."flake8.extension"]
