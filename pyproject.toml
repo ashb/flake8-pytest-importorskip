@@ -10,19 +10,21 @@ homepage = "https://pypi.org/project/flake8-pytest-importorskip"
 keywords = []
 
 [tool.poetry.plugins."flake8.extension"]
-PYTESTIMPORTSKIP = 'flake8_pytest_importorskip:patch_pytest_importorskip'
+PIS = 'flake8_pytest_importorskip:Plugin'
 
 [tool.poetry.dependencies]
 python = "^3.6"
 flake8 = ">=3"
+kgb = "^6.0"
+pycodestyle = "^2.6.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "*",allow-prereleases = true}
 bumpversion = "*"
 flake8-awesome = "*"
 mypy = "*"
-pylint = "*"
-pytest = "*"
+pylint = "^2.7.1"
+pytest = "^6.0"
 pytest-cov = "*"
 pytest-deadfixtures = "*"
 pytest-mock = "*"

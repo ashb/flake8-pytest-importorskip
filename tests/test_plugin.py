@@ -7,7 +7,7 @@ def _plugin_config(flake8dir, pytestconfig):
         f"""\
             [flake8:local-plugins]
             extension =
-              PYTESTIMPORTSKIP = flake8_pytest_importorskip:patch_pytest_importorskip
+              PYTESTIMPORTSKIP = flake8_pytest_importorskip:Plugin
             paths =
               {pytestconfig.rootdir}
             """
@@ -60,9 +60,9 @@ def test_importorskip_not_error(flake8dir):
 def test_other_toplevel_code_still_errors(flake8dir):
     flake8dir.make_example_py(
         """\
-        a = 1
-
         import pytest
+
+        a = 1
 
         pytest.importorskip("a")
 
@@ -73,5 +73,5 @@ def test_other_toplevel_code_still_errors(flake8dir):
     )
     result = flake8dir.run_flake8(["--ignore", "I900"])
     assert result.out_lines == [
-        "./example.py:3:1: E402 module level import not at top of file"
+        "./example.py:7:1: E402 module level import not at top of file"
     ]
