@@ -21,12 +21,12 @@ lint:  ## Check code for style
 	poetry run flake8 --statistics --show-source $(CODE) tests
 	poetry run pylint --rcfile=setup.cfg $(CODE)
 	poetry run mypy $(CODE) tests
-	poetry run black --skip-string-normalization --diff --check $(CODE) tests
+	poetry run black --diff --check $(CODE) tests
 	poetry run pytest --dead-fixtures --dup-fixtures
 
 pretty: ## Prettify the code
 	poetry run isort --apply --recursive $(CODE) tests
-	poetry run black --skip-string-normalization $(CODE) tests
+	poetry run black $(CODE) tests
 
 precommit_install: ## Install simple pre-commit checks
 	echo -e '#!/bin/sh\nmake lint test\n' > .git/hooks/pre-commit
