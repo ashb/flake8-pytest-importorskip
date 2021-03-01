@@ -1,4 +1,4 @@
-__version__ = "1.0.0.post0"
+__version__ = '1.0.0.post0'
 
 from typing import Any, Dict, Iterator, Optional, Tuple, Type, cast
 
