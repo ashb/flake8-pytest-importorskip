@@ -14,8 +14,7 @@ Treat `pytest.importorskip` as an import statement, not code, to silence the "mo
 
 It allows code such as this to pass without having to globally disable E402.
 
-It does this in a _slightly_ hacky way, so it may break in future versions of flake8 or pycodestyle.
-
+It does this in a _slightly_ hacky way (see the docs of [kgb] for details) , so it may break in future versions of pycodestyle.
 
 ### Checks:
 
@@ -53,12 +52,14 @@ None
 
 Apache 2.0
 
+[kgb]: https://github.com/beanbaginc/kgb
+
 ## Change Log
 
 Unreleased
 -----
 
-* ...
+* Replace accing private state of flake8 plugins with wrapping/spying on function, using [kgb]
 
 1.0.0 - 2021-02-19
 -----
