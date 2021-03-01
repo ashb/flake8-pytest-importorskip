@@ -59,7 +59,12 @@ Apache 2.0
 Unreleased
 -----
 
-* Replace accing private state of flake8 plugins with wrapping/spying on function, using [kgb]
+* ...
+
+1.1.0 - 2021-03-01
+-----
+
+* Replace accessing private state of flake8 plugins with wrapping/spying on function, using [kgb]
 
 1.0.0 - 2021-02-19
 -----
